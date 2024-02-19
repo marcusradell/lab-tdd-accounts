@@ -1,12 +1,4 @@
-type CreateAccount = (id: string, email: string) => void;
-
-const createAccount: CreateAccount = (id, email) => {
-  if (email === "") {
-    throw new Error("Email is required.");
-  }
-
-  throw new Error("Not implemented");
-};
+import { createAccount } from "./account";
 
 const main = () => {
   try {
