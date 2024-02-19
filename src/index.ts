@@ -1,12 +1,4 @@
-import { createAccount } from "./account";
+import { main } from "./main";
 
-const main = () => {
-  try {
-    const account = createAccount("38041b2a-30a7-4601-bee3-08e905d8b093", "");
-    console.log(account);
-  } catch (error) {
-    console.error(error);
-  }
-};
-
-main();
+// Empty email throws an error.
+main("38041b2a-30a7-4601-bee3-08e905d8b093", "");
